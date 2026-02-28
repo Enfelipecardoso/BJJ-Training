@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-bjj-red: #C00000;
+  --color-bjj-black: #000000;
+  --color-bjj-white: #FFFFFF;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.card-gradient {
+  background: linear-gradient(145deg, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.xp-bar-container {
+  @apply h-2 w-full bg-zinc-800 rounded-full overflow-hidden;
+}
+
+.xp-bar-fill {
+  @apply h-full bg-bjj-red transition-all duration-500 ease-out;
+}
+
